@@ -1,5 +1,5 @@
 import React from 'react'; 
- 
+ import { Link } from 'react-router-dom';
 
 export default function PricingChart() {
     return ( 
@@ -25,7 +25,7 @@ export default function PricingChart() {
                             </ul>
                         </div>
                         <div className="table_footer">
-                            <a href="/" className="buttonPriicng">Get Started</a>
+                            <Link to="/" className="buttonPriicng">Get Started</Link>
                         </div>
                     </div>
                 </div>
@@ -47,7 +47,7 @@ export default function PricingChart() {
                             </ul>
                         </div>
                         <div className="table_footer">
-                            <a href="/" className="buttonPriicng">Get Started</a>
+                            <Link to="/" className="buttonPriicng">Get Started</Link>
                         </div>
                     </div>
                 </div>
@@ -69,7 +69,7 @@ export default function PricingChart() {
                             </ul>
                         </div>
                         <div className="table_footer">
-                            <a href="/" className="buttonPriicng">Get Started</a>
+                            <Link to="/" className="buttonPriicng">Get Started</Link>
                         </div>
                     </div>
                 </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 import illu3 from '../Asstes/illu3.PNG';
 import ResolutionPricing from './ResolutionPricing';
 const TaxPlanningSrvicesStyle = styled.div`
@@ -46,8 +46,7 @@ height: auto;
 section {
     padding: 60px 0;
    /* min-height: 100vh;*/
-}
-
+} 
 .sec-title{
 position:relative;
 z-index: 1;
@@ -310,19 +309,18 @@ export default function TaxPlanningSrvices() {
                                 <div className="sec-title">
                                     <h2>Tax Planning Services</h2>
                                 </div>
-                                <div className="text">TOT offers a full range of tax planning services for individuals and businesses 
-                                in diversified industries, whether domestic or international.  We work closely with our clients throughout
-                                 the year to ensure that they are in compliance with tax planning rules and regulations that are constantly 
-                                 evolving at the Federal, State, and local tax level.  It’s our goal to help clients understand the full tax 
-                                 implications of their financial decisions and protect their wealth and assets by avoiding tax pitfalls in a timely manner.  
+                                <div className="text">
+                                    Tax planning is the process of organizing your financial affairs in a way that minimizes
+                                    your tax liability. It involves understanding the various tax laws and regulations that
+                                    apply to your situation and taking advantage of any deductions, credits, and other
+                                    tax-saving opportunities that are available.
                                 </div>
                                 <div className="text">
-                                Tax planning is when you consult with a tax professional to devise plans for managing your money with respect 
-                                to tax obligations. These plans are often short-term, for immediate usage or a year-long strategy to incorporate
-                                 over the ensuing tax year. <br />
-                                 Many individuals and business owners make tax planning appointments once or twice a year for advice on navigating 
-                                 federal, state, and local tax law changes then executing the tax professional’s plan.
-                                     
+                                    At TaxOnTrack, we provide comprehensive tax planning services to help individuals, small businesses,
+                                    and corporations save money on their taxes. Our team of experienced tax professionals will work
+                                    with you to understand your financial goals and develop a customized plan to minimize your tax burden.
+                                    <br />
+
                                 </div>
                                 {/* <div className="btn-box">
                                     <a href="/" className="theme-btn btn-style-one" > 
@@ -340,7 +338,7 @@ export default function TaxPlanningSrvices() {
                                     <span>Web Developer</span>
                                 </div> */}
                                 <figure className="image-1"><a href="/" className="lightbox-image" data-fancybox="images">
-                                    <img title="Rahul Kumar Yadav" src={illu3} alt="" />
+                                    <img title="Ayza Khan" src={illu3} alt="" />
                                     {/* "https://i.ibb.co/QP6Nmpf/image-1-about.jpg" */}
                                 </a>
                                 </figure>
@@ -351,31 +349,91 @@ export default function TaxPlanningSrvices() {
                     </div>
                     <div className="sec-title">
                         <span className="title">Our Future Goal</span>
-                        <h2>We want to lead in innovation & Technology</h2>
+                        <h2>
+                            {/* We want to lead in innovation & Technology */}
+                            Some of the tax planning services we offer include:
+                        </h2>
                     </div>
                     <div className="text">
-                    If you are a Sole Proprietor or a single member LLC, you can deduct all ordinary and necessary expenses.
-                     (An ordinary expense is one that is common and accepted in your industry. A necessary expense is one that is helpful 
-                    and appropriate for your trade or business. An expense does not have to be indispensable to be considered necessary)
+                        <ol style={{ listStyleType: 'decimal' }}>
+                            <li>
+                                <h4 style={{ color: "#198754 " }}> Reviewing your tax situation: </h4>
+                                We will analyze your financial records and identify any tax-saving opportunities that may be available
+                                to you. This may include reviewing your income, deductions, credits, and other factors that can impact
+                            </li>
+                            <li>
+                                <h4 style={{ color: "#198754 " }}>Developing a tax strategy: </h4>
+                                We will analyze your financial records and identify any tax-saving opportunities that may be available
+                                to you. This may include reviewing your income, deductions, credits, and other factors that can impact
+                            </li>
+                            <li>
+                                <h4 style={{ color: "#198754 " }}>Filing your tax return:</h4>
+                                Our team will prepare and file your tax return on your behalf, ensuring that all required forms and 
+                                documentation are completed accurately and in a timely manner. We will also represent you in any 
+                                interactions with the Internal Revenue Service (IRS) or other tax authorities. 
+                            </li>
+                            <li>
+                                <h4 style={{ color: "#198754 " }}>Providing ongoing support:</h4>
+                                We understand that tax laws and regulations can be complex and constantly changing. That's why we offer 
+                                ongoing support to our clients, providing guidance and assistance throughout the year to help them stay 
+                                compliant and minimize their tax liability. 
+                            </li>
+                            <li>
+                                <h4 style={{ color: "#198754 " }}>Maximizing deductions and credits:</h4>
+                                There are many deductions and credits available that can help reduce your tax liability. We will help 
+                                you identify and claim all the deductions and credits you are eligible for, to ensure you are not paying 
+                                more tax than necessary.
+                            </li>
+                            <li>
+                                <h4 style={{ color: "#198754 " }}>Tax-efficient investments:</h4>
+                                The type of investments you make can have a significant impact on your tax bill. We can help you choose 
+                                investments that are tax-efficient, such as municipal bonds and index funds, to help minimize your tax 
+                                burden. 
+                            </li>
+                            <li>
+                                <h4 style={{ color: "#198754 " }}>Retirement planning:</h4>
+                                Proper planning for retirement can help you minimize your tax liability and maximize your retirement 
+                                savings. We can help you understand the various retirement plan options available and choose the one 
+                                that best suits your needs. 
+                            </li>
+                            <li>
+                                <h4 style={{ color: "#198754 " }}>Estate planning:</h4>
+                                Estate planning involves organizing your affairs in a way that maximizes the transfer of your assets 
+                                to your beneficiaries while minimizing taxes and other costs. We can help you develop an estate plan 
+                                that meets your unique needs and goals. 
+                            </li> 
+                            <li>
+                                <h4 style={{ color: "#198754 " }}>Tax Withholding Analysis:  </h4>
+                                Don't overpay on your taxes! Our tax withholding analysis services ensure that you are withholding 
+                                the right amount of taxes throughout the year. By accurately calculating your tax withholding, you 
+                                can avoid unexpected tax bills and penalties. 
+                            </li>
+                            <li>
+                                <h4 style={{ color: "#198754 " }}>ESTIMATED TAX PAYMENT VOUCHERS: </h4>
+                                Are you self-employed or have irregular income? Our tax professionals can help you accurately calculate 
+                                and file your estimated tax payment vouchers to avoid underpayment penalties. 
+                            </li> 
+                            <li>
+                                <h4 style={{ color: "#198754 " }}>ENTITY STRUCTURE PLANNING: </h4>
+                                Choosing the right entity structure for your business is crucial for tax and liability purposes. 
+                                Our tax firm offers entity structure planning services to help you determine the best structure 
+                                for your business. 
+                            </li>
+                            <li>
+                                <h4 style={{ color: "#198754 " }}>COLLEGE SAVINGS PLANNING: </h4>
+                                Planning for your child's education can be overwhelming, but our tax professionals can help you 
+                                navigate the various college savings options. From 529 plans to Coverdell ESAs, we can assist you 
+                                in finding the best college savings plan for your family's needs.
+                            </li> 
+                        </ol>
                     </div>
                     <div className="text">
-                    If you are a business owners often must factor tax provisions into starting up, winding down, expansion, transferring ownership, 
-                    relocating, and day-to-day operations. In addition to federal, state, and local tax law considerations, business owners 
-                    may be unsure which tax benefits are available to them based on parameters like size and industry. Tax planning services for
-                     these aspects can save business owners vast amounts of money, 
-                    as well as improve their recordkeeping systems for particularly valuable tax credits.
+                        By working with our team of tax planning experts, you can be confident that you are taking all the necessary
+                        steps to minimize your tax burden and achieve your financial goals. Contact us today to learn more about how
+                        we can help you with your tax planning needs.
                     </div>
                     <div className="text">
-                    Taxpayers with substantial holdings often need additional tax planning strategy 
-                    sessions for planning their capital gain–or loss–timing. An asset that has significantly appreciated in value can provide wealth,
-                     but properly planning for the tax consequences of cashing it out can ensure you get to keep more of the wealth.
-                    </div>
-                    <div className="text">
-                    Tax credits are a dollar-for-dollar reduction of your tax bill, which often makes them more beneficial than tax deductions. However, 
-                    eligibility for tax credits depends on several factors, and whether the credit is refundable or non-refundable.
-                    </div>
-                    <div className="text"> 
-                    <br/>
+                        <br />
                     </div>
                 </div>
             </section>

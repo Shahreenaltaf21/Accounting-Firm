@@ -621,7 +621,7 @@ export default function NewServices() {
                                         <div className="listar-feature-content-wrapper" style={{ paddingTop: "0px" }}> 
                                             <div className="listar-feature-item-title listar-feature-counter-added">
                                                 <span><span>01</span>
-                                                Text Resolution Services</span>
+                                                Tax Resolution Services</span>
                                             </div> 
                                             <div className="listar-feature-item-excerpt">
                                             At TOT we are determined to provide the help you need to be tax compliant. </div> 

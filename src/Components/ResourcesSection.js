@@ -226,8 +226,7 @@ export default function ResourcesSection() {
                     <div data-aos="fade-right" className="mini-section">
                         <div className="hexagon">
                             <i className="fa fa-fighter-jet" aria-hidden="true">
-                                <MdCreditScore/>
-
+                                <MdCreditScore/> 
                             </i>
                         </div>
                         <div className="text-mini-section mt-2">

@@ -1,34 +1,32 @@
-import React from 'react';
-import styled from 'styled-components';
-import dsfv from '../Asstes/dsfv.png';
+import React from 'react';  
+// import styled from 'styled-components';
+import p01 from '../Asstes/01.jpg';
+import { Link } from 'react-router-dom';   
 const HeaderStyle = styled.div`
 body{
     margin: 0;
  }
  *{
-     box-sizing: border-box;
- 
+     box-sizing: border-box; 
  }
  .main{
      margin: 0;
      justify-content: center;
      height: 45rem;
-     background-color: blueviolet; /* For browsers that do not support gradients */
+    //  background-color: blueviolet; /* For browsers that do not support gradients */
     //  background-image: linear-gradient(170deg, blueviolet 0%, blueviolet 60%, white 60.1%);
-     background-image: linear-gradient(170deg, #07B061 0%, #1C6442 60%, white 60.1%);
- 
- }
+    //  background-image: linear-gradient(170deg, #07B061 0%, #1C6442 60%, white 60.1%); 
+  }
  .rightimage{
      width: 50%;
      height: 70%;
      display: flex;
      float: right;
-     margin: 2% 10px 0px 0px;
+     margin: 40px 20px 5px -4px;
  }
  .rightimage img{
-     margin-left: 15%;
-     border: 2px solid white;
- 
+    //  margin-left: 15%;
+     border: 2px solid green; 
  }
  .lefttext{
      width: 40%;
@@ -41,7 +39,8 @@ body{
      overflow: hidden;
  }
  .lefttext .textwrap{
-     margin: 25% 10px 0px 0px;
+    //  margin: 25% 10px 0px 0px;
+    margin: 0px 0px 0px 0px; 
      width: 100%;
      justify-content: center;
      text-align: center;
@@ -49,20 +48,20 @@ body{
  .lefttext .textwrap h1{
      width: 100%;
      overflow-wrap: break-word;
-     font-size: 50px;
-     font-family: 'Nosifer', cursive;
-     padding: 0;
-     color: white;
+     font-size: 50px;  
+     padding: 20px;
+     color: #198754;
      justify-content: center;
      text-align: center;
      margin: 0 ;
+     line-height: 70px
  }
  .lefttext .textwrap p{
-     margin: 0px 20px 0px 20px;
+     margin: 0px 20px 60px 20px;
      font-size: 20px;
-     font-family: 'Oswald', cursive;
+    //  font-family: 'Oswald', cursive;
      padding: 0;
-     color: whitesmoke;
+    //  color: whitesmoke;
      justify-content: center;
      text-align: center;
  }
@@ -75,14 +74,14 @@ body{
      border-radius: 5px;
     //  background-color: skyblue;
     background-color: #07B061;
-     font-family: 'Oswald', cursive;
+    //  font-family: 'Oswald', cursive;
      justify-content: center;
      text-align: center;
  }
  .lefttext .textwrap button:hover{
     //  color: rgb(255, 12, 126);
-    color: white;
-     background-color: #198754;
+    // color: white;
+    //  background-color: #198754;
      border: 2px solid black;
  }
  #navicon{
@@ -109,70 +108,52 @@ body{
             margin: 0;
             justify-content: center;
             height: 50rem;  
-        }
-        .rightimage{
-            width: 50%;
-            height: 50%;   
         } 
         .lefttext{
             width: 100%;
             height: 55%;      
         }
         .lefttext .textwrap{
-            margin: 25% 10px 0px 0px;
+            margin: 10% 10px 0px 0px;
             width: 100%;
             justify-content: center;
             text-align: center;
         }
         .lefttext .textwrap h1{
             width: 100%;   
+        }  
+        .rightimage{ 
+            display: none;  
         } 
-        .rightimage{
-            width: 100%;
-            height: 50%; 
-            margin: 10px 0px 0px 0px;
-        }
-        .rightimage img{
-            margin-top: 10px;
-            border: none;
-            margin-left: 0px;
-        
-        }
-         
  }
  
 `;
 
-export default function NewHeader() {
+export default function NewHeader( ) {  
     return (
         <HeaderStyle>
             <div className="main row d-flex">
                 <div className="lefttext col-8 col-md-8 col-sm-12">
-                    <div className="textwrap">
+                    <div className="textwrap"> 
                         <h1>
-                            TOT
-                        </h1>
-                        <p>
-                            TaxOnTrack LLC (TOT) is a virtual tax firm USA that specializes in tax planning, preparation, and
-                            resolution services for individuals, businesses, and expatriates.
-                            Additionally, we offer business operational services such as bookkeeping,
-                            yearly reconciliation, sales tax, payroll services, and LLC and corporation formation.
+                            TOT 
+                        </h1>  
+                        <p> 
+                            Looking for expert tax planning, preparation, and resolution services? TaxOnTrack  (TOT) is
+                            here for you. As a Long Island based accounting firm, we specialize in serving individuals,
+                            businesses, and expatriates. In addition to our tax services, we also offer a range of business
+                            operational services including bookkeeping, sales tax, payroll services, notary and LLC/corporation
+                            formation.Contact us today to see how we can help you with all your tax and business needs.
                         </p>
-                        <a href="./Pages/About">
-                            <button>More</button></a>
+                        <Link to="./Pages/About"> 
+                            <button className='text-white'>More</button> 
+                        </Link>
                     </div>
                 </div>
                 <div className="rightimage img-fluid col-4 col-md-4 col-sm-12">
-                    <img src={dsfv} alt='' />
+                    <img src={p01} alt='' />
                 </div>
-            </div>
-            {/* <div className="aboutus">
-                <div className="leftaboutus"> */}
-            {/* <img src="https://static01.nyt.com/images/2019/04/16/sports/16onsoccerweb-2/merlin_153612873_5bb119b9-8972-4087-b4fd-371cab8c5ba2-superJumbo.jpg"/> */}
-            {/* </div>
-                <div className="rightaboutus"> 
-                </div>
-            </div> */}
+            </div> 
         </HeaderStyle>
 
     );

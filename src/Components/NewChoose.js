@@ -1,6 +1,10 @@
 import React from 'react';
-import { RiNumber1, RiNumber2, RiNumber3 } from 'react-icons/ri'
-import styled from 'styled-components';
+// import { RiNumber1, RiNumber2, RiNumber3 } from 'react-icons/ri'
+import Picture3 from '../Asstes/Picture3.png';
+import Picture4 from '../Asstes/Picture4.png';
+import Picture5 from '../Asstes/Picture5.jpg';
+import pict from '../Asstes/pict.jpg';
+// import styled from 'styled-components';
 const NewStyle = styled.div`
 h1,
 h2,
@@ -141,7 +145,10 @@ border-radius:10px;
 transition: all .5s ease 0;
 transition: all 0.5s ease 0s;
 }
-.item:hover h6, .item:hover p{
+.item h4{
+    color: #198754;
+}
+.item:hover h4, .item:hover p{
 color:#fff;
 -webkit-transition: all .5s ease 0;
 transition: all .5s ease 0;
@@ -184,10 +191,10 @@ color:#f91942
 font-size:15px;
 line-height:26px;
 }
-.item h6 {
-margin-bottom:20px;
-color:#2f2f2f;
-}
+// .item h6 {
+// margin-bottom:20px;
+// color:#2f2f2f;
+// }
 .mission p {
 margin-bottom: 10px;
 font-size: 15px;
@@ -263,36 +270,48 @@ export default function NewChoose() {
                     <div className="row">
                         <div className="section-head col-sm-12">
                             <h4><span>Why Choose</span> Us?</h4>
-                            <p>When you choose us, you'll feel the benefit of 10 years' experience of Web Development. Because we know the digital world and we know that how to handle it. With working knowledge of online, SEO and social media.</p>
+                            <p> </p>
                         </div>
-                        <div className="col-lg-4 col-sm-6">
-                            <div className="item"> <span className="icon feature_box_col_one">
+                        <div className="col-lg-3 col-sm-6">
+                            <div className="item"> <span className="icon ">
+                                {/* className=>feature_box_col_one */}
                                 {/* <i className="fa fa-globe"></i> */}
-                                <RiNumber1/>
+                                {/* <RiNumber1/> */}
+                                <img src={Picture3} alt=''/>
                                 </span>
-                                <h6>Guaranteed Refund</h6>
+                                <h4>Guaranteed Refund</h4>
                                 <p>Our services are tailored to individual needs. Take advantage of every credit and deduction available to you.</p>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-sm-6">
-                            <div className="item"> <span className="icon feature_box_col_three">
+                        <div className="col-lg-3 col-sm-6">
+                            <div className="item"> <span className="icon  ">
                                 {/* <i className="fa fa-hourglass-half"></i> */}
-                                <RiNumber2/>
+                                {/* <RiNumber2/> */}
+                                <img src={Picture4} alt=''/>
                                 </span>
-                                <h6>Year around service</h6>
-                                <p>Our services are available throughout the year, unlike other seasonal Tax prep companies.</p>
+                                <h4>Year around service</h4>
+                                <p>Our services are available throughout the year unlike other seasonal Tax-prep companies. We are <b style={{color:"#198754"}}>BBB Accredited</b>.</p>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-sm-6">
-                            <div className="item"> <span className="icon feature_box_col_two">
+                        <div className="col-lg-3 col-sm-6">
+                            <div className="item"  style={{padding:"30px 23px"}}> <span className="icon ">
                                 {/* <i className="fa fa-anchor"></i> */}
-                                <RiNumber3/>
+                                {/* <RiNumber3/> */}
+                                <img src={Picture5} alt=''/>
                                 </span>
-                                <h6>Experienced Tax Pros</h6>
+                                <h4>Experienced Tax Pros</h4>
                                 <p>Our reputable tax professionals are registered to practice before the IRS and Quick Books certified.</p>
                             </div>
                         </div>
-                        
+                        <div className="col-lg-3 col-sm-6">
+                            <div className="item"> 
+                            <span className="icon"  style={{height:"110px", width:"100px"}}> 
+                                <img style={{height:"80px", width:"100px"}} src={pict} alt=''/>
+                                </span>
+                                <h4>Transparent Pricing</h4>
+                                <p>Get to know the cost of our services upfront. Our fees are competitive and transparent.</p>
+                            </div>
+                        </div>
                         {/* <div className="col-lg-4 col-sm-6">
                             <div className="item"> <span className="icon feature_box_col_four"><i className="fa fa-database"></i></span>
                                 <h6>Business Growth</h6>

@@ -1,6 +1,7 @@
 import React from 'react';
-import illu2 from '../Asstes/illu2.PNG' 
-import styled from 'styled-components';
+// import illu2 from '../Asstes/illu2.PNG' 
+import p02 from '../Asstes/02.jpg'
+// import styled from 'styled-components';
 const MissionsStyle = styled.div` 
 * {
   box-sizing: border-box;
@@ -13,8 +14,8 @@ display: flex;
 }
 
 .blog-slider {
-    width: 95%;
-  position: relative;
+    width: 100%;
+    position: relative;
     max-width: 800px;
     margin: auto;
     background: #fff;
@@ -22,7 +23,7 @@ display: flex;
     padding: 25px;
     border-radius: 25px;
     height: 400px;
-  transition: all .3s;
+    transition: all .3s;
   
    
   @media screen and (max-width: 992px) {
@@ -81,7 +82,8 @@ display: flex;
     height: 300px;
     background-image: linear-gradient(326deg, #07B061 0%, #1C6442  74%); 
     // background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
-    box-shadow: 4px 13px 30px 1px rgba(252, 56, 56, 0.2);
+    // box-shadow: 4px 13px 30px 1px rgba(252, 56, 56, 0.2);
+    box-shadow: 0 0px 9px #25940f;
     border-radius: 20px;
     transform: translateX(-80px);
    
@@ -130,7 +132,7 @@ display: flex;
   
   &__content {
     // width: 60%;
-    padding-right: 25px;
+    padding-right: 0px;
     @media screen and (max-width: 992px) {
       // width: 55%;
     }
@@ -164,7 +166,7 @@ display: flex;
     font-size: 24px;
     font-weight: 700;
     // color: #0d0925;
-    margin-bottom: 20px;
+    margin-bottom: 4px;
   }
   
   &__text {
@@ -254,15 +256,18 @@ export default function NewMission() {
                 <div className="blog-slider__wrp swiper-wrapper">
                     <div className="blog-slider__item swiper-slide">
                         <div className="blog-slider__img"> 
-                            <img src={illu2} alt=""/>
+                            <img src={p02} alt=""/>
                         </div>
                         <div className="blog-slider__content"> 
                             <div className="blog-slider__title ">Our Misson</div>
-                            <div className="blog-slider__text">TaxOnTracks’ mission is to assist our valued clients and people in achieving success and desired
-                        results through timely,<br/> relevant advice and services based on contemporary knowledge.  We will be fair
-                        minded in dealing with clients <br/> and staff and strive to build synergies that make us more effective and
-                        efficient and enhance the perception that WebsterRogers is <br/>
-                        “a firm you can count on.”</div>
+                            <div className="blog-slider__text">
+                              {/* TaxOnTracks’ mission is to assist our valued clients and people in achieving success and desired
+                        results through timely, relevant advice and services based on contemporary knowledge.  We will be fair
+                        minded in dealing with clients and staff and strive to build synergies that make us more effective and
+                        efficient and enhance the perception that WebsterRogers is “a firm you can count on.” */}
+                        At our tax and accounting firm, our mission is to provide professional services to our clients in a timely and efficient manner. We strive to make the complex world of taxes and accounting accessible and understandable for our clients, and to help them achieve their financial goals. Our team of experienced professionals is dedicated to delivering personalized, reliable solutions that meet the unique needs of each and every one of our clients. Whether you are a small business owner, an individual looking to file your taxes, or a large corporation in need of financial guidance, we are here to help you succeed.
+
+                        </div>
                             {/* <a href="/" className="blog-slider__button">READ MORE</a> */}
                         </div>
                     </div>

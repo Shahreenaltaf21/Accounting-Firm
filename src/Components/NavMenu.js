@@ -5,8 +5,12 @@ import { NavDropdown } from 'react-bootstrap';
 import { GoLocation, GoSearch } from 'react-icons/go';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
+// import Services from '../Pages/Services';
+// import { useNavigate} from 'react-router-dom'; 
 
 export default function NavMenu() {
+    // const navigate = useNavigate();
     const [show, setShow] = useState(false);
     const showDropdown = (e) => {
         setShow(!show);
@@ -14,23 +18,31 @@ export default function NavMenu() {
     const hideDropdown = e => {
         setShow(false);
     }
+    // const open = url => {
+    //     window.open(url, ' ' );
+    //     window.open(url, '_blank', 'noopener,noreferrer');
+    //   };
+    // const navigateToContacts = () => { 
+    //     navigate('./Pages/Services');
+    //   };
+    
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-light bg-success">
-                <a className="navbar-brand" href="/">
+                <Link className="navbar-brand" to="/">
                     <img src={logo} width="50" height="50" alt="Accounting firm" className="img-fluid img-logo" />
-                </a>
+                </Link>
                 <span className='text-white display-col txt' style={{
-                    fontSize: "35px", 
-                    width:"40px", 
+                    fontSize: "30px", 
+                    width:"100px", 
                     lineHeight:'20px', 
-                    height:' 40px', 
+                    height:'30px', 
                     display: "-webkit-box",  WebkitLinClamp: '2',  /* number of lines to show */
            lineClamp: '2' , WebkitBoxOrient: 'vertical' 
                     }}>TOT  </span> 
                 <span className='text-white txt2' style={{
-                    fontSize: "10px",  
-                    margin:" 33px 4px -10px -47px ", 
+                    fontSize: "12px",  
+                    margin:"8px 0px -25px -126px", 
                     lineHeight:'20px', 
                     display: "-webkit-box",  WebkitLinClamp: '2',  /* number of lines to show */
            lineClamp: '2' , WebkitBoxOrient: 'vertical' 
@@ -48,21 +60,31 @@ export default function NavMenu() {
                             <Link className="nav-link active text-white" aria-current="page" to="./Pages/About">About</Link>
                         </li> 
                         <li className="nav-item active mx-2">
-                            <NavDropdown className="text-white" title="Services" 
+                        {/* <Link className="nav-link active" aria-current="page" to="./Pages/Services">Services</Link> */}
+                            <NavDropdown 
+                            className="nav-item active mx-2 text-white"  
+                            // title="Services" 
+                            // onClick={navigateToContacts}
+                            // onClick={() => open(Services)}
                                 id="collasible-nav-dropdown"
-                                show={show}
+                                show={show} 
                                 onMouseEnter={showDropdown}
                                 onMouseLeave={hideDropdown}
-                            >
-                                <Link className="nav-link active" aria-current="page" to="./Pages/Services">Services</Link>
+                            >   
                                 <NavDropdown.Item href="#action/3.1">
                                     <Link className="nav-link active " aria-current="page" to="./Components/ResolutionHead" >Tax Resolution Services</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.2">
-                                    <Link className="nav-link active " aria-current="page" to="./Components/TaxPlanningServices" >Tax Planning Services</Link>
+                                    <Link className="nav-link active " aria-current="page" to="../Pages/TaxPrepration" >Tax Preparation</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.3">
+                                    <Link className="nav-link active " aria-current="page" to="./Components/TaxPlanningServices" >Tax Planning Services</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.4">
                                     <Link className="nav-link active " aria-current="page" to="./Components/BusinessServices" >Business Tax Services</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.5">
+                                    <Link className="nav-link active " aria-current="page" to="./Components/NotaryServices" >Notary Services</Link>
                                 </NavDropdown.Item>
                             </NavDropdown>
                         </li>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
     return (
@@ -16,7 +17,7 @@ export default function Header() {
                                         resolution services for individuals, businesses, and expatriates. Additionally, we offer business operational 
                                         services such as bookkeeping, 
                                         yearly reconciliation, sales tax, payroll services, and LLC and corporation formation.  </h4>
-                                    <a className="btn btn-custom mr-1" href="./Pages/About">Learn more</a>     
+                                    <Link className="btn btn-custom mr-1" to="./Pages/About">Learn more</Link>     
                                 </div>
                             </div>
                         </div>

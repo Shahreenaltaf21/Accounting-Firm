@@ -1,41 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-
+.bgH :hover {
+  background-color: white;
+  transition: color 0.2s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+}
 /* color code-----#198754 */
-/* .form-floating{
-    position: relative;
-}
-.icon{
-    position: absolute;
-    top: calc(50%);
-    left: 1.25rem;
-}
-.form-floating .form-control{
-     left: .5rem; 
-    padding-left: 3.5rem;
-
-}  */
 .navbar-brand {
   color: white;
+}
+.rs-btn:focus,
+.rs-btn:hover {
+  background-color: #198754;
+  color: white;
+}
+
+.rs-dropdown-toggle,
+.rs-dropdown-toggle.rs-btn {
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  padding-right: 32px;
+  position: relative;
+  z-index: 5;
+  background-color: #198754;
+  font-size: 19px;
+  margin: 0;
+  padding: 5px 0px 8px 6px;
+}
+.nav-link1 {
+  display: block;
+  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  /* font-size: var(--bs-nav-link-font-size); */
+  font-size: 19px;
+  font-weight: var(--bs-nav-link-font-weight);
+  color: white;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
 }
 
 .nav-link {
   display: block;
   padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
-  font-size: var(--bs-nav-link-font-size);
+  /* font-size: var(--bs-nav-link-font-size); */
+  font-size: 19px;
   font-weight: var(--bs-nav-link-font-weight);
   color: white;
   text-decoration: none;
-  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
 }
-
 .bg-color {
   background-color: #25940f;
 }
-
 .btn-info {
   --bs-btn-color: rgb(0, 0, 0);
   --bs-btn-bg: rgb(0, 0, 0);
@@ -47,7 +67,7 @@ body {
   --bs-btn-a: rgb(7, 7, 7);
   --bs-btn-active-bg: rgb(0, 0, 0);
   --bs-btn-active-border-color: rgb(0, 0, 0);
-  --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
+  --bs-btn-active-shadow: inset 0 3px 5pxrgba (0, 0, 0, 0.125);
   --bs-btn-dis: rgb(0, 0, 0);
   --bs-btn-dis: rgb(0, 0, 0);
   --bs-btn-disabled-border-color: rgb(0, 0, 0);
@@ -69,17 +89,29 @@ hr {
   height: 4px;
   border: none;
 }
-
 .img1 {
+  width: 150px;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+}
+.img2 {
   width: 100px;
   height: 100px;
   justify-content: center;
   align-items: center;
+  margin: 2px;
 }
-
+.img3 {
+  width: 200px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  margin: 2px;
+}
 .img-logo {
-  width: 80px;
-  height: 75px;
+  width: 150px;
+  height: 150px;
 }
 
 p {
@@ -92,13 +124,13 @@ h5 {
 
 .service-box {
   position: relative;
-  padding: 65px 30px 30px;
-  transition: all .5s;
+  /* padding: 65px 30px 30px; */
+  padding: 25px 22px 40px;
+  transition: all 0.5s;
   background-color: white;
   border-radius: 6px;
   /* box-shadow: 0 4px 18px #25940f; */
   box-shadow: 0 0px 8px #25940f;
-
 }
 
 .service-box .service-icon {
@@ -115,6 +147,11 @@ h5 {
   padding-bottom: 95px;
   background-color: white;
 }
+.section11 {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  background-color: white;
+}
 
 .service-box :hover {
   color: rgb(111, 138, 107);
@@ -122,6 +159,8 @@ h5 {
 
 .title h5 {
   font-size: 40px;
+  color: #198754;
+  padding-bottom: 25px;
 }
 
 .center {
@@ -133,7 +172,7 @@ h5 {
 }
 
 .bg-pattern {
-  background: url(./Asstes/download.png );
+  background: url(./Asstes/download.png);
 }
 
 .home-wrapper h1 {
@@ -151,7 +190,7 @@ h5 {
 }
 
 .leftul {
-  padding-left: 15.5rem;
+  padding-left: 10rem;
 }
 
 .rightf {
@@ -196,13 +235,13 @@ h5 {
   color: #585858;
   display: inline-block;
   padding: 4px 0;
-  transition: all .4s ease-out;
+  transition: all 0.4s ease-out;
 }
 
 .footer-alt .copy-rights {
   margin: 0;
   line-height: 30px;
-  color: hsla(0, 0%, 100%, .5);
+  color: hsla(0, 0%, 100%, 0.5);
   text-align: center;
 }
 
@@ -299,6 +338,11 @@ h5 {
   opacity: 0.8;
 }
 
+@media screen and (max-width: 1600px) and (min-width: 1470px) {
+  .leftul {
+    padding-left: 13.5rem;
+  }
+}
 @media screen and (max-width: 450px) {
   .leftul {
     padding-left: 7.5rem;
@@ -313,12 +357,12 @@ h5 {
     font-size: 40px;
     width: 30px;
     line-height: 30px;
-    height: 30px; 
+    height: 30px;
   }
-  .txt2{
+  .txt2 {
     font-size: 12px;
     margin: 32px 0px -16px -110px;
-    line-height: 20px;  
+    line-height: 20px;
   }
 }
 
@@ -412,7 +456,7 @@ li {
   position: relative;
   top: -20px;
   right: -20px;
-  font-size: .45em;
+  font-size: 0.45em;
 }
 
 .table1 .table_header_price::after {
@@ -437,7 +481,7 @@ li {
 }
 
 .table_content_list li {
-  font-size: .95rem;
+  font-size: 0.95rem;
   font-weight: 600;
   padding: 6px 0;
 }
@@ -455,7 +499,7 @@ li {
   width: 100%;
   max-width: 180px;
   padding: 8px 18px;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .table1 .buttonPriicng {
@@ -466,7 +510,7 @@ li {
 }
 
 .table1 .button:hover {
-  box-shadow: 0 0 50px rgba(0, 0, 0, .3);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
   transform: translateY(-2px);
 }
 
@@ -480,7 +524,7 @@ li {
 } */
 .table1.recommeded {
   transform: scale(1.2);
-  box-shadow: 0 0 20px rgba(0, 0, 0, .25);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
   z-index: 2;
 }
 
@@ -494,4 +538,12 @@ li {
   .table1.recommeded {
     transform: scale(1);
   }
+}
+.btn-group > .btn-group:not(:last-child) > .btn,
+.btn-group > .btn.dropdown-toggle-split:first-child,
+.btn-group > .btn:not(:last-child):not(.dropdown-toggle) {
+  border-top-right-radius: 0;
+  margin: 0;
+  border-bottom-right-radius: 0;
+  padding: 0;
 }

@@ -1,7 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 import illus from '../Asstes/illus.PNG';
-import ResolutionPricing from './ResolutionPricing';  
+// import ResolutionPricing from './ResolutionPricing';  
 const TaxServicesBgStyle = styled.div`
 h1,
 h2,
@@ -299,7 +299,7 @@ color: #f
   
 `;
 
-export default function ResolutionHead() { 
+export default function ResolutionHead() {
     return (
         <TaxServicesBgStyle>
             <section className="about-section">
@@ -310,21 +310,33 @@ export default function ResolutionHead() {
                                 <div className="sec-title">
                                     <h2>Tax Resolution Services </h2>
                                 </div>
-                                <div className="text">At TOT we are determined to provide the help you need to be tax compliant.
-                                    Our tax resolution specialists assess your situation carefully and take over the burden.
-                                    We see it to the end with our 3Ps.
-                                    <ul>
-                                        <li>P - Plan next steps </li>
-                                        <li>P -  Prepare documents and filings   </li>
-                                        <li>P - Prosecute filings to appropriate tax authorities and follow up </li>
-                                    </ul>
-                                </div>
                                 <div className="text">
+                                    A tax resolution is the process of resolving a tax issue with the Internal Revenue Service
+                                    (IRS) or state tax agency. This can include finding a way to pay off outstanding tax debts,
+                                    negotiating a payment plan, or disputing the amount of tax owed. A tax resolution professional
+                                    can help you explore your options and find a solution that works for your individual situation.
+                                </div>
+                                <div className='text'>
+                                    <h3>
+                                        <br />
+                                    </h3>
+                                </div>
+                                <div className='text'>
+                                    <h3>
+                                        <br />
+                                    </h3>
+                                </div>
+                                <div className='text'>
+                                    <h3>
+                                        <br />
+                                    </h3>
+                                </div>
+                                {/* <div className="text">
                                     Tax resolution is the process in which tax matters are straightened out
                                     with the proper authorities and plans are accordingly made and executed. Often
                                     confused with “tax relief”, the tax resolution definition is the actual practice of
                                     solving specific tax problems. For instance, life can get in the way and cause you to fall behind on your taxes.
-                                </div>
+                                </div> */}
                                 {/* <div className="btn-box">
                                     <a href="/" className="theme-btn btn-style-one" > 
                                             Contact Us 
@@ -340,10 +352,11 @@ export default function ResolutionHead() {
                                     <h2>Ayza Khan</h2>
                                     <span>Web Developer</span>
                                 </div> */}
-                                <figure className="image-1"><a href="/" className="lightbox-image" data-fancybox="images">
-                                    <img title="Rahul Kumar Yadav" src={illus} alt="" />
-                                    {/* "https://i.ibb.co/QP6Nmpf/image-1-about.jpg" */}
-                                </a>
+                                <figure className="image-1">
+                                    <a href="/" className="lightbox-image" data-fancybox="images">
+                                        <img title="Ayza Khan" src={illus} alt="" />
+                                        {/* "https://i.ibb.co/QP6Nmpf/image-1-about.jpg" */}
+                                    </a>
                                 </figure>
 
                             </div>
@@ -355,33 +368,51 @@ export default function ResolutionHead() {
                         <h2>We want to lead in innovation & Technology</h2>
                     </div>
                     <div className="text">
-                        Tax resolution services pertain to tax issues that have arisen due to
-                        incorrect preparation of tax forms, tax debt, IRS errors, major changes to your business and/or personal
-                        lives or neglecting your tax matters. The following services commonly fall under the tax resolution umbrella.
-                        Some tax resolution experts offer all these services while other
-                        companies or independent experts focus on one specific area, such as audit support or back tax settlements
+                        <h4 style={{ color: '#198754' }}>Audit Representation</h4>
+                        If you receive a notice that you are being audited by the IRS, it can be a stressful and intimidating experience.
+                        An experienced tax resolution professional can represent you during the audit process and ensure that your rights
+                        are protected. They can also negotiate on your behalf to reduce any potential penalties or fines.
                     </div>
                     <div className="text">
-                        The tax resolution specialist handles all correspondence with the IRS, argues your case for you to help you owe as little in taxes as
-                        you are legally obligated to, and if applicable, helps restore your tax account to good standing.
+                        <h4 style={{ color: '#198754' }}>Currently Not Collectible Status (CNC) </h4>
+                        If you are unable to pay your tax debt due to financial hardship, you may be able to qualify for Currently Not Collectible (CNC) status. This means that the IRS will temporarily stop collection efforts, but the debt will still be owed. A tax resolution professional can help you apply for CNC status and provide guidance on how to manage your debt during this time.
                     </div>
                     <div className="text">
-                        The IRS actually has a statute of limitations on collections of 10 years. This timeframe is based
-                        on the IRS having 10 years from which your tax bill was assessed to collect the balance,
-                        and if they fail to contact you in that time, they can’t make further efforts to collect the taxes due
+                        <h4 style={{ color: '#198754' }}>Innocent Spouse Relief </h4>
+                        If you were married at the time a tax debt was incurred and did not have knowledge of the wrongdoing that led to the debt, you may be able to claim innocent spouse relief. This can protect you from being held responsible for your spouse's tax debt. A tax resolution professional can help you understand your options and guide you through the process of claiming innocent spouse relief.
                     </div>
                     <div className="text">
-                        An offer in compromise (OIC) is filed when you want to make an offer with the IRS to settle your back
-                        taxes for less than the originally assessed amount.
+                        <h4 style={{ color: '#198754' }}>Injured Spouse Relief</h4>
+                        If you are married and you filed a joint tax return, but your spouse's debt is causing your refund to be applied to the debt, you may be able to claim injured spouse relief. This can protect your share of the refund and ensure that you receive your portion. A tax resolution professional can help you understand your options and guide you through the process of claiming injured spouse relief.
                     </div>
                     <div className="text">
-                        The offer in compromise process can be daunting since you still need to make an effort to pay your tax
-                        bill while applying and awaiting the verdict, such as continuing to make payments
-                        on any installment plans you have open. Your account must be in good standing with all open tax returns filed.
+                        <h4 style={{ color: '#198754' }}>Installment Plans </h4>
+                        If you are unable to pay your tax debt in full, you may be able to set up an installment plan with the IRS. This allows you to make monthly payments towards your debt. A tax resolution professional can help you explore your options and negotiate an installment plan that works for your individual situation.
                     </div>
+                    <div className="text">
+                        <h4 style={{ color: '#198754' }}>Levy Release</h4>
+                        If the IRS has placed a levy on your assets, such as your wages or bank account, a tax resolution professional can help you negotiate a release of the levy. They can also help you explore other options for paying off your debt and avoiding future levies.
+                    </div>
+                    <div className="text">
+                        <h4 style={{ color: '#198754' }}>Offer in Compromise</h4>
+                        An Offer in Compromise (OIC) is a settlement offer that allows you to pay less than the full amount of your tax debt. The IRS will consider an OIC if you cannot pay your debt in full, and it is unlikely that you will be able to pay it off in the future. A tax resolution professional can help you determine if you are eligible for an OIC and guide you through the process of making an offer. 
+                    </div>  
+                    <div className="text">
+                        <h4 style={{ color: '#198754' }}>Unfiled Tax Returns</h4>
+                        If you have missed filing tax returns in the past, it is important to catch up as soon as possible. Not only can you face penalties and interest for late filing, but you may also be unable to claim certain credits or deductions. A tax resolution professional can help you gather the necessary documentation and file your returns accurately and on time.  
+                    </div>
+                    <div className="text">
+                        <h4 style={{ color: '#198754' }}>Penalty abatement</h4>
+                        We also offer assistance with penalty abatement. If you have received penalties for late filing or payment of taxes, we can help you request a reduction or removal of those penalties.   
+                    </div>
+                    <div className="text">
+                        <h4 style={{ color: '#198754' }}>IRS and State notice response services</h4>
+                        If you have received a notice from the IRS or state tax agency, our team can help you understand what it means and take the appropriate steps to resolve the issue.<br/>
+                        If you are struggling with tax issues, don't hesitate to reach out to our team. We are here to help you find a resolution and put your tax problems behind you. 
+                    </div>  
                 </div>
             </section>
-            <ResolutionPricing />
+            {/* <ResolutionPricing /> */}
         </TaxServicesBgStyle>
     );
 }

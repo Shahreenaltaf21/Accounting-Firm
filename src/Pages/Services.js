@@ -5,10 +5,10 @@ import HelpSection from '../Components/HelpSection'
 
 export default function Services() {
   return (
-    <div> 
+     <> 
       <ServiceAbout/>
       <HelpSection/>
       <PricingChart/> 
-    </div>
+      </>
   );
 }

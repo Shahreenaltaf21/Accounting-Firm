@@ -66,15 +66,15 @@ export default function QuestionSection() {
                                 <div className="row">
                                     <div className="col-sm-12">
                                         <div className="form-group">
-                                            <textarea name="comments" rows="4" placeholder="Your message*..."
+                                            <textarea style={{height:"80px"}} name="comments" rows="4" placeholder="Your message*..."
                                                 required="" id="comments"
                                                 className="form-control is-untouched is-pristine av-invalid form-control"></textarea>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="row">
-                                    <div className="text-left col-sm-12">
-                                        <input type="submit" id="submit" name="send" className="submitBnt btn  btn-custom" value="Send Message" />
+                                    <div className="text-center col-sm-12" >
+                                        <input style={{height:"60px" }} type="submit" id="submit" name="send" className=" text-white submitBnt btn  btn-custom" value="Send Message" />
                                     </div>
                                 </div>
                                 <div id="simple-msg">

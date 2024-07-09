@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import illu2 from '../Asstes/illu2.PNG';
-import ResolutionPricing from './ResolutionPricing';
+// import ResolutionPricing from './ResolutionPricing';
 const BusinessServicesStyle = styled.div`
 h1,
 h2,
@@ -308,24 +308,28 @@ export default function BusinessServices() {
                         <div className="content-column col-lg-6 col-md-12 col-sm-12 order-2">
                             <div className="inner-column">
                                 <div className="sec-title">
-                                    <h2>Business Tax Services </h2>
+                                    <h2>Business Services </h2>
                                 </div>
-                                <div className="text">Business tax services are becoming extremely important.
+                                {/* <div className="text">Business tax services are becoming extremely important.
                                     Large or small, established or startup, we have the same goal for all - save you tax money. Our aim is to
                                     maximize tax deductions, not tax evasion. Our team of tax pros will
                                     evaluate your tax situation and execute thoughtful tax plans which will minimize your liabilities and maximize profitability
 
-                                </div>
+                                </div> */}
                                 <div className="text">
-                                    Businesses need special attention before and after-tax seasons.
+                                    {/* Businesses need special attention before and after-tax seasons.
                                     Every business is different and requires thoughtful planning. Without proper planning you
                                     may lose deductions. We will analyze your previous tax returns and find you tax savings.
-                                    Our Tax team specializes in the following <br />
+                                    Our Tax team specializes in the following  */}
+                                    Welcome to our business tax preparation services page! At our tax firm, we specialize in providing top-notch assistance
+                                    to small and medium-sized businesses. Our team of experienced
+                                    tax professionals is equipped with the knowledge and skills to handle a wide range of business tax returns, including <br />
                                     <ul>
                                         <li> S-Corporation (Form 1120S) </li>
                                         <li> C-Corporation (Form 1120)</li>
                                         <li> Partnership (Form 1065)</li>
-                                        <li> Estates and Trusts (Form 1041</li>
+                                        <li> Estates and Trusts (Form 1041)</li>
+                                        <li>NYS IT-204LL filing </li>
                                     </ul>
                                 </div>
                                 {/* <div className="btn-box">
@@ -344,7 +348,7 @@ export default function BusinessServices() {
                                     <span>Web Developer</span>
                                 </div> */}
                                 <figure className="image-1"><a href="/" className="lightbox-image" data-fancybox="images">
-                                    <img title="Rahul Kumar Yadav" src={illu2} alt="" />
+                                    <img title="Ayza Khan" src={illu2} alt="" />
                                     {/* "https://i.ibb.co/QP6Nmpf/image-1-about.jpg" */}
                                 </a>
                                 </figure>
@@ -358,20 +362,59 @@ export default function BusinessServices() {
                         <h2>We want to lead in innovation & Technology</h2>
                     </div>
                     <div className="text">
-                        The income and expenses of small businesses, single member LLCs, and rental property businesses are reported on
+                        {/* The income and expenses of small businesses, single member LLCs, and rental property businesses are reported on
                         schedules C and E of their personal income tax return and are taxed according to their personal tax rate on that income.
-                        Such businesses require small business tax preparing services.
+                        Such businesses require small business tax preparing services. */}
+                        <h4 style={{ color: '#198754' }}>C-Corporation (Form 1120)</h4>
+                        If you own a C-Corporation, you will need to file Form 1120 to report your business income,
+                        deductions, and credits. This form is used to calculate your corporation's tax liability and
+                        report it to the IRS. Our team can help you accurately complete this form and ensure that you
+                        pay the correct amount of taxes.
                     </div>
                     <div className="text">
-                        A sole proprietor is someone who owns an unincorporated business by himself or herself. An unincorporated business may operate under an
-                        LLC (Limited Liability Company), which provides an extra layer of protection
+                        {/* A sole proprietor is someone who owns an unincorporated business by himself or herself. An unincorporated business may operate under an
+                        LLC (Limited Liability Company), which provides an extra layer of protection */}
+                        <h4 style={{ color: '#198754' }}>S-Corporation (Form 1120S) </h4>
+                        S-Corporations are similar to C-Corporations in that they are separate legal entities from their owners.
+                        However, they are taxed differently. If you own an S-Corporation, you will need to file Form 1120S to
+                        report your business income and deductions. Our team can assist you in completing this form and ensuring
+                        that you pay the correct amount of taxes.
                     </div>
                     <div className="text">
-                        Businesses must report all income including cash/Credit or Debit card/wire transfers and income reported on 1099K, 1099-NEC,1099 MISC.
-                        Rental Real Estate businesses can also deduct all ordinary and necessary expenses including depreciation of Assets and improvements.
-
+                        {/* Businesses must report all income including cash/Credit or Debit card/wire transfers and income reported on 1099K, 1099-NEC,1099 MISC.
+                        Rental Real Estate businesses can also deduct all ordinary and necessary expenses including depreciation of Assets and improvements. */}
+                        <h4 style={{ color: '#198754' }}>Partnership (Form 1065)</h4>
+                        If your business is organized as a partnership, you will need to file Form 1065 to report your
+                        business income and deductions. This form is used to calculate the partnership's tax liability and
+                        report it to the IRS. Our team can help you accurately complete this form and ensure that you pay the
+                        correct amount of taxes.
                     </div>
                     <div className="text">
+                        {/* Businesses must report all income including cash/Credit or Debit card/wire transfers and income reported on 1099K, 1099-NEC,1099 MISC.
+                        Rental Real Estate businesses can also deduct all ordinary and necessary expenses including depreciation of Assets and improvements. */}
+                        <h4 style={{ color: '#198754' }}>Estates and Trusts (Form 1041)</h4>
+                        If you are the administrator of an estate or trust, you will need to file Form 1041 to report the income, deductions, and credits of the estate or trust. Our team can assist you in completing this form and ensuring that you pay the correct amount of taxes.
+                    </div>
+                    <div className="text">
+                        {/* Businesses must report all income including cash/Credit or Debit card/wire transfers and income reported on 1099K, 1099-NEC,1099 MISC.
+                        Rental Real Estate businesses can also deduct all ordinary and necessary expenses including depreciation of Assets and improvements. */}
+                        <h4 style={{ color: '#198754' }}>NYS IT-204LL Filing </h4>
+                        If you own a business in New York State, you may be required to file the NYS IT-204LL form. This form is used to report your business's income, deductions, and credits to the state. Our team can help you accurately complete this form and ensure that you pay the correct amount of taxes.
+                    </div>
+                    <div className="text">
+                        {/* Businesses must report all income including cash/Credit or Debit card/wire transfers and income reported on 1099K, 1099-NEC,1099 MISC.
+                        Rental Real Estate businesses can also deduct all ordinary and necessary expenses including depreciation of Assets and improvements. */}
+                        <h4 style={{ color: '#198754' }}>1031 Exchange </h4>
+                        For businesses looking to complete a 1031 exchange, we offer 1031 exchange services. A 1031 exchange, also known as a like-kind exchange, is a tax-deferred transaction in which a business can exchange one investment property for another without incurring any tax liability. If you are considering a 1031 exchange, it is important to properly plan and execute the transaction to ensure compliance with the IRS. Our team is well-versed in the specific requirements for 1031 exchanges and can help you navigate the process smoothly. 
+                    </div>
+                    <div className="text">
+                        {/* Businesses must report all income including cash/Credit or Debit card/wire transfers and income reported on 1099K, 1099-NEC,1099 MISC.
+                        Rental Real Estate businesses can also deduct all ordinary and necessary expenses including depreciation of Assets and improvements. */}
+                        <h4 style={{ color: '#198754' }}>Filing Extensions </h4>
+                        We offer extension filing services for all corporations. If you are unable to file your corporate taxes on time, you may be able to request an extension from the IRS. Our team can help you file for an extension and ensure that you are in compliance with all relevant tax laws.<br/>
+                        At our tax firm, we strive to provide excellent business tax preparation services to our clients. Whether you own a C-Corporation, S-Corporation, partnership, estate, or trust, we have the expertise to handle your tax needs. Contact us today to learn more about how we can assist you with your business tax preparation needs. 
+                        </div>
+                    {/* <div className="text">
                          <ul>
                          Common deductible expenses for businesses are 
                             <li>
@@ -390,13 +433,13 @@ export default function BusinessServices() {
                                 5. Business property rent
                             </li>
                          </ul>
-                    </div>
-                    <div className="text"> 
-                     <br/>
+                    </div> */}
+                    <div className="text">
+                        <br />
                     </div>
                 </div>
             </section>
-            <ResolutionPricing />
+            {/* <ResolutionPricing /> */}
         </BusinessServicesStyle>
     );
 }

@@ -68,8 +68,7 @@ export default function ContactForm() {
       .catch((error) => {
         // error response
       });
-  };
-
+  }; 
   return (
     <>
       <FormStyle>
