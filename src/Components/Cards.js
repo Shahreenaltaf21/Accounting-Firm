@@ -126,9 +126,9 @@ export default function Cards() {
                                 </div>
                                 <h3>Our Mission </h3>
                                 <p>Our mission is to assist our valued clients and people in achieving success
-                                     and desired results through timely,
+                                    and desired results through timely,
                                     relevant advice and services based on contemporary knowledge</p>
-                                 
+
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-12">
@@ -140,8 +140,8 @@ export default function Cards() {
                                 </div>
                                 <h3>What we do</h3>
                                 <p>
-                                We work closely with clients throughout the year & ensure that they are in compliance 
-                                with tax planning and regulations that are constantly evolving at tax level. 
+                                    We work closely with clients throughout the year & ensure that they are in compliance
+                                    with tax planning and regulations that are constantly evolving at tax level.
                                     {/* <ul>
                                         <li>
                                             Tax Preparation
@@ -164,22 +164,22 @@ export default function Cards() {
                                     </ul> */}
                                 </p>
                             </div>
-                        </div>   
+                        </div>
                     </div>
-                </div> 
+                </div>
             </section>
             <div className="container d-flex p-4">
-        <div className="row">
-        <div className="col-sm-4 container d-flex p-4"> 
-            <img src={image4} className="img-fluid" alt="img" />
-          </div>
-          <div className="col-sm-7 container p-4 mt-4 justify-content-center">
-            <h1>Tax Planning services</h1>
-            <Collapse/>
-          </div>
-          
-        </div>
-      </div>
+                <div className="row">
+                    <div className="col-sm-4 container d-flex p-4">
+                        <img src={image4} className="img-fluid" alt="img" />
+                    </div>
+                    <div className="col-sm-7 container p-4 mt-4 justify-content-center">
+                        <h1>Tax Planning services</h1>
+                        <Collapse />
+                    </div>
+
+                </div>
+            </div>
         </CardsStyle>
     );
 }
